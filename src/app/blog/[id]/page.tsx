@@ -2,14 +2,16 @@ import { Container, PageContainer, TextLink } from "../../components";
 import { notFound } from "next/navigation";
 import { blogPosts, formatDate } from "../posts";
 
-interface BlogPostPageProps {
-    params: {
-        id: string;
-    };
-}
+export const generateStaticParams = async () => {
+    return blogPosts.map((post) => ({
+        id: post.id,
+    }));
+};
+export type paramsType = Promise<{ id: string }>;
 
-export default function BlogPost({ params }: BlogPostPageProps) {
-    const post = blogPosts.find(post => post.id === params.id);
+export default async function BlogPost({ params }: { params: paramsType }) {
+    const { id } = await params;
+    const post = blogPosts.find(post => post.id === id);
 
     if (!post) {
         notFound();
