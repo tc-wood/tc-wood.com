@@ -9,11 +9,19 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "tom wood",
-  description: "portfolio/portal for tom wood",
+  title: "tom wood's website",
+  description: "blog, about me, and contact info",
+  metadataBase: new URL('https://tc-wood.com'),
   icons: {
     icon: "/icon.svg",
     shortcut: "/icon.svg",
+  },
+  openGraph: {
+    images: [
+      {
+        url: "/icon.svg",
+      },
+    ],
   },
 };
 
