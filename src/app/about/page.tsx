@@ -13,7 +13,7 @@ export default function About() {
                     &gt; about me <span className="cursor-blink">_</span>
                 </h3>
                 <p className="text-md mb-4">
-                    hello! i'm tom, a 19-year-old software developer based in the UK.
+                    hello! i'm tom, a 20-year-old software developer based in the UK.
                 </p>
                 <Image 
                     src={meImage} 
@@ -25,10 +25,10 @@ export default function About() {
                     me. hi!
                 </p>
                 <p className="text-md mb-4">
-                    i specialise in full-stack web development, but in the past have written games with Unity, and mobile apps with React Native. i've also worked on CI/CD pipelines using GitHub Actions.
+                    i specialise in software development, but in the past have written games with Unity, and mobile apps with React Native. i've also worked on CI/CD pipelines using GitHub Actions, and event-driven data integrations with AWS Lambda and SQS.
                 </p>
                 <p className="text-md mb-4">
-                    when i'm not coding, i'm usually playing video games or at my local trading card store spending exorbitant amounts of money on shiny cardboard.
+                    when i'm not coding, i'm usually playing video games, watching the football (COYG ❤️), or at my local trading card store.
                 </p>
                 <p className="text-md">
                     you'll find my some of my "professional" contact info on the home page. feel free to reach out (professionally or otherwise :D)!
