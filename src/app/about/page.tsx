@@ -28,7 +28,7 @@ export default function About() {
                     when i'm not coding, i'm usually playing video games, watching the football (COYG ❤️), or at my local trading card store.
                 </p>
                 <p className="text-md">
-                    you'll find my some of my "professional" contact info on the home page. feel free to reach out (professionally or otherwise :D)!
+                    you'll find some of my "professional" contact info on the home page. feel free to reach out (professionally or otherwise :D)!
                 </p>
             </Container>
             <TextLinkOuter href="/">
