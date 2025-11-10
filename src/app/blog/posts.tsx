@@ -78,9 +78,6 @@ export const blogPosts: BlogPost[] = [
                 <p className="text-md mb-4">
                     this mini-project taught me how to use canvas. it's pretty powerful combined with react hooks!
                 </p>
-                <p className="text-md mb-4">
-                    there's a bug with the score incrementing by 2 instead of 1. i'll fix it soon :P
-                </p>
                 <a href="/games/snake" className="transition-transform hover:scale-[1.05] inline-block font-bold">
                     <Image src={snakeIcon} alt="snake" className="w-12" />
                     snake

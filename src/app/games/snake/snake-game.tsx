@@ -9,7 +9,6 @@
         the snake is an array of objects that represent the position of the snake's body.
 
         to-do:
-            - fix the issue where the score increments by 2 instead of 1
             - make the game mobile-friendly
 */
 
