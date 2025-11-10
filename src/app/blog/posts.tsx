@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import blogImage1_1 from "../../assets/blog-1-1.jpg";
 import blogImage2_1 from "../../assets/blog-2-1.jpg";
+import snakeIcon from "../../assets/snake-icon.svg";
 
 export interface BlogPost {
     id: string;
@@ -38,7 +39,6 @@ export const blogPosts: BlogPost[] = [
         id: '2',
         title: "life, work, and ideas",
         date: new Date(2025, 5, 11),
-        latest: true,
         content: (
             <>
                 <p className="text-md mb-4">
@@ -62,6 +62,29 @@ export const blogPosts: BlogPost[] = [
                 <p className="text-md">
                     hopefully i'll be able to start using this blog page more. i love this site, and i want it to show more of me.
                 </p>
+            </>
+        )
+    },
+    {
+        id: '3',
+        title: "snake game! 🐍",
+        date: new Date(2025, 10, 10),
+        latest: true,
+        content: (
+            <>
+                <p className="text-md mb-4">
+                    i finally got around to making a minigame - and what better way to start than with snake? note that you'll need to be on a computer to play it (it uses keyboard controls).
+                </p>
+                <p className="text-md mb-4">
+                    this mini-project taught me how to use canvas. it's pretty powerful combined with react hooks!
+                </p>
+                <p className="text-md mb-4">
+                    there's a bug with the score incrementing by 2 instead of 1. i'll fix it soon :P
+                </p>
+                <a href="/games/snake" className="transition-transform hover:scale-[1.05] inline-block font-bold">
+                    <Image src={snakeIcon} alt="snake" className="w-12" />
+                    snake
+                </a>
             </>
         )
     },

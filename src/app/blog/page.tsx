@@ -1,4 +1,4 @@
-import { Container, PageContainer, TextLink } from "../components";
+import { Container, PageContainer, TextLinkOuter } from "../components";
 import Link from 'next/link';
 import { blogPosts, formatDate } from "./posts";
 
@@ -7,9 +7,6 @@ export default function Blog() {
     
     return (
         <PageContainer>
-            <TextLink href="/">
-                &lt; back
-            </TextLink>
             <div className="grid gap-6">
                 {sortedPosts.map((post) => (
                     <Link 
@@ -31,7 +28,9 @@ export default function Blog() {
                     </Link>
                 ))}
             </div>
-            <div className="mb-16"></div>
+            <TextLinkOuter href="/">
+                &lt; back
+            </TextLinkOuter>
         </PageContainer>
     );
 } 

@@ -1,11 +1,12 @@
-import { Container, PageContainer, TextLink } from "./components";
+import { Container, PageContainer } from "./components";
+import TextLinkOuter from "./components/text-link-outer";
 
 export default function NotFound() {
     return (
         <PageContainer>
-            <TextLink href="/">
+            <TextLinkOuter href="/">
                 &lt; back
-            </TextLink>
+            </TextLinkOuter>
             <Container>
                 <h1 className="text-3xl font-bold text-red-900 mb-8">
                     &gt; 404 - page not found <span className="cursor-blink">_</span>

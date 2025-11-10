@@ -1,13 +1,10 @@
-import { PageContainer, Container, TextLink } from "../components";
+import { PageContainer, Container, TextLinkOuter } from "../components";
 import Image from "next/image";
 import meImage from "../../assets/me.jpg";
 
 export default function About() {
     return (
         <PageContainer>
-            <TextLink href="/">
-                &lt; back
-            </TextLink>
             <Container>
                 <h3 className="text-3xl font-bold mb-4">
                     &gt; about me <span className="cursor-blink">_</span>
@@ -34,6 +31,9 @@ export default function About() {
                     you'll find my some of my "professional" contact info on the home page. feel free to reach out (professionally or otherwise :D)!
                 </p>
             </Container>
+            <TextLinkOuter href="/">
+                &lt; back
+            </TextLinkOuter>
         </PageContainer>
     );
 }

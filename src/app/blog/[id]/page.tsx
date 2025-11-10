@@ -1,4 +1,4 @@
-import { Container, PageContainer, TextLink } from "../../components";
+import { Container, PageContainer, TextLinkOuter } from "../../components";
 import { notFound } from "next/navigation";
 import { blogPosts, formatDate } from "../posts";
 
@@ -19,9 +19,6 @@ export default async function BlogPost({ params }: { params: paramsType }) {
 
     return (
         <PageContainer>
-            <TextLink href="/blog">
-                &lt; back to posts
-            </TextLink>
             <Container>
                 <h1 className="text-3xl font-bold mb-2">
                     &gt; {post.title} <span className="cursor-blink">_</span>
@@ -33,7 +30,9 @@ export default async function BlogPost({ params }: { params: paramsType }) {
                     {post.content}
                 </div>
             </Container>
-            <div className="mb-16"></div>
+            <TextLinkOuter href="/blog">
+                &lt; back to posts
+            </TextLinkOuter>
         </PageContainer>
     );
 } 

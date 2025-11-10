@@ -3,7 +3,7 @@ import Image from 'next/image';
 import githubIcon from '../assets/github-icon.svg';
 import linkedinIcon from '../assets/linkedin-icon.svg';
 import emailIcon from '../assets/email-icon.svg';
-import { Container, PageContainer, TextLink } from './components';
+import { Container, PageContainer, TextLinkOuter } from './components';
 
 export default function Home() {
     return (
@@ -28,15 +28,21 @@ export default function Home() {
                 </div>
             </Container>
             <div className="flex gap-4">
-                <TextLink href="/blog">
+                <TextLinkOuter href="/blog">
                     blog
-                </TextLink>
+                </TextLinkOuter>
                 <span className="text-lg text-gray-300">
                 •
                 </span>
-                <TextLink href="/about">
+                <TextLinkOuter href="/about">
                     about
-                </TextLink>
+                </TextLinkOuter>
+                <span className="text-lg text-gray-300">
+                •
+                </span>
+                <TextLinkOuter href="/games">
+                    games
+                </TextLinkOuter>
             </div>
         </PageContainer>
     );
