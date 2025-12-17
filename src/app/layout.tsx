@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
+
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -9,8 +12,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "tom wood's website",
-  description: "blog, about me, and contact info",
+  title: "tom wood",
+  description: "tom wood's portfolio website",
   metadataBase: new URL('https://tc-wood.com'),
   icons: {
     icon: "/icon.svg",
@@ -34,6 +37,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} font-poppins antialiased`}>
         {children}
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
