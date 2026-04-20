@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "tom wood",
-  description: "tom wood's portfolio website",
+  description: "software engineer @ ucl",
   metadataBase: new URL('https://tc-wood.com'),
   icons: {
     icon: "/icon.svg",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "/icon.svg",
+        url: "/icon.png",
       },
     ],
   },
