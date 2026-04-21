@@ -3,3 +3,4 @@ export { default as PageContainer } from './page-container';
 export { default as TextLinkOuter } from './text-link-outer';
 export { default as TextLinkInner } from './text-link-inner';
 export { default as IconLink } from './icon-link';
+export { default as AnimatedPage } from './animated-page';
